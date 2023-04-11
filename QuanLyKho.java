@@ -9,7 +9,7 @@ public class QuanLyKho {
     ArrayList<DienThoai> phone; 
     ArrayList<DienThoaiDiDong>dsGiaDienThoaiDiDong;
     ArrayList<DienThoaiThongMinh>dsGiaDienThoaiThongMinh;
-    ArrayList<KhoHangDienThoai>dtDatYeuCauGiaBan; 
+    ArrayList<KhoHangDienThoai>dtDatYeuCauGiaNhap; 
  
     public QuanLyKho() { 
         phone = new ArrayList<>(); 
@@ -272,33 +272,33 @@ public class QuanLyKho {
     
 
  
-        public void hienDSDienThoaiDiDongTheoGiaBan(float gia) {         
+        public void hienDSDienThoaiDiDongTheoGiaNhap(float gia) {         
         dsGiaDienThoaiDiDong = new ArrayList<>();         
-        dtDatYeuCauGiaBan= new ArrayList<>(); 
+        dtDatYeuCauGiaNhap= new ArrayList<>(); 
         for (DienThoai x : phone) {             
             if (x instanceof DienThoaiDiDong) { 
                 for (int i = 0; i < ((DienThoaiDiDong) x).getKhdtdd().size(); i++) {                     
-                    if (((DienThoaiDiDong) x).getKhdtdd().get(i).getGiaBan() <= gia) { 
+                    if (((DienThoaiDiDong) x).getKhdtdd().get(i).getGiaNhap() <= gia) { 
                         ((DienThoaiDiDong) x).hienThongTinDienThoaiDiDong();
                         ((DienThoaiDiDong) x).getKhdtdd().get(i).hienKhoHangDienThoai();
                         dsGiaDienThoaiDiDong.add((DienThoaiDiDong) x);                         
-                        dtDatYeuCauGiaBan.add(((DienThoaiDiDong) x).getKhdtdd().get(i)); 
+                        dtDatYeuCauGiaNhap.add(((DienThoaiDiDong) x).getKhdtdd().get(i)); 
                     } 
                 } 
             } 
         } 
     }
-    public void hienDSDienThoaiThongMinhTheoGiaBan( float gia) {         
+    public void hienDSDienThoaiThongMinhTheoGiaNhap( float gia) {         
         dsGiaDienThoaiThongMinh = new ArrayList<>();         
-        dtDatYeuCauGiaBan= new ArrayList<>(); 
+        dtDatYeuCauGiaNhap= new ArrayList<>(); 
         for (DienThoai x : phone) {             
             if (x instanceof DienThoaiThongMinh) { 
                 for (int i = 0; i < ((DienThoaiThongMinh) x).getKhdttm().size(); i++) {                     
-                    if (((DienThoaiThongMinh) x).getKhdttm().get(i).getGiaBan() <= gia) { 
+                    if (((DienThoaiThongMinh) x).getKhdttm().get(i).getGiaNhap() <= gia) { 
                         ((DienThoaiThongMinh) x).hienThongTinDienThoaiThongMinh();
                         ((DienThoaiThongMinh) x).getKhdttm().get(i).hienKhoHangDienThoai();
                         dsGiaDienThoaiThongMinh.add((DienThoaiThongMinh) x);                         
-                        dtDatYeuCauGiaBan.add(((DienThoaiThongMinh) x).getKhdttm().get(i)); 
+                        dtDatYeuCauGiaNhap.add(((DienThoaiThongMinh) x).getKhdttm().get(i)); 
                     } 
                 } 
             } 
@@ -306,7 +306,7 @@ public class QuanLyKho {
     }
     public void hienDSDatYeuCau()
     { 
-        for(KhoHangDienThoai x: dtDatYeuCauGiaBan) 
+        for(KhoHangDienThoai x: dtDatYeuCauGiaNhap) 
         { 
             x.hienKhoHangDienThoai();
         } 
@@ -318,8 +318,8 @@ public class QuanLyKho {
         System.out.println("3. Hiển thị danh sách các điện thoại di động"); 
         System.out.println("4. Hiển thị danh sách các điện thoại thông minh"); 
         System.out.println("5. Chỉnh sửa thông tin");  
-        System.out.println("6. Hiện ra danh sách điện thoại di động có giá bán tối đa theo yêu cầu ( input: gia ban)");
-        System.out.println("7. Hiện ra danh sách điện thoại thông minh có giá bán tối đa theo yêu cầu ( input: gia ban)"); 
+        System.out.println("6. Hiện ra danh sách điện thoại di động có giá nhập tối đa theo yêu cầu ( input: gia ban)");
+        System.out.println("7. Hiện ra danh sách điện thoại thông minh có giá nhập tối đa theo yêu cầu ( input: gia ban)"); 
         System.out.println("-----Nhấn phím 0 để thoát chương trình-----"); 
     } 
 }
