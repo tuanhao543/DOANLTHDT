@@ -263,8 +263,8 @@ public class DSDienThoai {
         System.out.println("3. Hiển thị danh sách các điện thoại di động"); 
         System.out.println("4. Hiển thị danh sách các điện thoại thông minh"); 
         System.out.println("5. Chỉnh sửa thông tin");  
-        System.out.println("6. Hiện ra danh sách điện thoại di động có giá bán tối đa theo yêu cầu ( input: gia ban)");
-        System.out.println("7. Hiện ra danh sách điện thoại thông minh có giá bán tối đa theo yêu cầu ( input: gia ban)"); 
+        System.out.println("6. Hiện ra danh sách điện thoại di động có giá nhập tối đa theo yêu cầu ( input: gia ban)");
+        System.out.println("7. Hiện ra danh sách điện thoại thông minh có giá nhập tối đa theo yêu cầu ( input: gia ban)"); 
         System.out.println("-----Nhấn phím 0 để thoát chương trình-----"); 
     } 
      
