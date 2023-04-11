@@ -38,15 +38,15 @@ public class Main {
                     break;                 
                     }                                  
                     case 6: {                      
-                    System.out.print("Nhap gia ban toi da: ");                     
-                    float giaBan = sc.nextFloat(); 
-                    a.hienDSDienThoaiDiDongTheoGiaBan( giaBan);                     
+                    System.out.print("Nhap gia nhap toi da: ");                     
+                    float giaNhap = sc.nextFloat(); 
+                    a.hienDSDienThoaiDiDongTheoGiaNhap( giaBan);                     
                     break;                 
                     }
                     case 7: {                      
-                    System.out.print("Nhap gia ban toi da: ");                     
-                    float giaBan = sc.nextFloat(); 
-                    a.hienDSDienThoaiThongMinhTheoGiaBan( giaBan);                     
+                    System.out.print("Nhap gia nhap toi da: ");                     
+                    float giaNhap = sc.nextFloat(); 
+                    a.hienDSDienThoaiThongMinhTheoGiaNhap( giaBan);                     
                     break;                 
                     }
                     default:                     
